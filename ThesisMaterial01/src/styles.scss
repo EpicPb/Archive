@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "~@angular/material/prebuilt-themes/purple-green.css"; */
+// @import "../node_modules/fullcalendar/dist/fullcalendar.min.css";
+// @import "fullcalendar/fullcalendar.min.css";
+
+body{
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.card{
+  margin: 8px;
+  /* margin-left: 20%; */
+}
+a{
+  text-decoration: none;
+  color: rgb(33, 33, 33);
+}
+
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-192 { font-size: 96px; }
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.material-icons.md-cyan{
+  // color: #00BCD4;
+  // color: #006064;
+  color: #01579B;
+}
+
+.material-icons{
+  cursor:pointer;
+  transition: all .2s ease;
+}
+.mat-list-icon{ color: rgba(255, 255, 255, 1); }
+
+// .material-icons:hover{
+//     transform: scale(1.1);
+// }

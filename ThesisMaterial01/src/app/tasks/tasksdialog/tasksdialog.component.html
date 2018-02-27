@@ -1,0 +1,35 @@
+<div class="">
+  <mat-form-field [floatLabel]="auto">
+    <input matInput placeholder='Title' class="input-title">
+  </mat-form-field>
+  <br>
+  <mat-form-field [floatLabel]="options.value.floatLabel">
+    <textarea matInput  placeholder='Description' class="input-description"></textarea>
+  </mat-form-field>
+  <label>Repeat every</label>
+  <mat-form-field>
+    <input matInput placeholder="1">
+  </mat-form-field>
+</div>
+
+
+<form #orderForm="ngForm" (ngSubmit)="onSubmit(orderForm)">
+   <!-- <input type ="hidden" name="$key" #$key="ngModel" [(ngModel)]="tasksService.selectedTask.$key" > -->
+   <input type ="hidden" name="$key">
+
+  <div class="form-group">
+    <!-- <input class="form-control input-title" name="table" #name="ngModel" [(ngModel)]="tasksService.selectedTask.title" placeholder="Title" required autocomplete="off"> -->
+    <input class="form-control input-title" name="table" placeholder="Title" required autocomplete="off">
+
+  </div>
+
+  <div>
+    <div class="input-group">
+     <!-- <input class="form-control input-description" name="order" #name="ngModel" [(ngModel)]="tasksService.selectedTask.description" placeholder="Description"  required autocomplete="off"> -->
+     <input class="form-control input-description" name="order" placeholder="Description"  required autocomplete="off">
+
+    </div>
+  </div>
+    <button mat-raised-button color="primary"> Submit</button>
+    <button mat-raised-button>Reset</button>
+</form>

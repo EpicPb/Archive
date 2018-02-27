@@ -1,0 +1,10 @@
+.col{
+  /* width: 60%;
+   display: flex;
+  flex-wrap: wrap; */
+}
+.addcircle{
+  position: absolute;
+  bottom: 15vh;
+  right: 15vh;
+}

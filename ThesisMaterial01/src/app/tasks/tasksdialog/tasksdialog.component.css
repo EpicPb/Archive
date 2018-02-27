@@ -1,0 +1,28 @@
+input{
+  padding: 10px;
+  border: none;
+}
+input:focus{
+  outline: none;
+}
+input::placeholder{
+  color: rgb(148, 148, 148);
+}
+
+mat-form-field{
+  width: 100%;
+}
+.input-title{
+  font-size: 24pt;
+}
+.input-title::placeholder{
+  font-size: 24pt;
+}
+
+.input-description{
+  font-size: 12pt;
+  width: 100%;
+}
+.mat-form-field-underline{
+  background-color: white;
+}

@@ -1,0 +1,33 @@
+<!-- <div class="container">
+  <div class="calendar">
+    <mat-grid-list  cols="7">
+      <mat-grid-tile
+          [colspan]="7" [rowspan]="1">
+            {{months[1].month}}
+      </mat-grid-tile>
+      <mat-grid-tile *ngFor="let d of days"
+          [colspan]="1" [rowspan]="1">
+            {{d.day}}
+      </mat-grid-tile>
+      <mat-grid-tile *ngFor="let iList of i"
+          [colspan]="1" [rowspan]="1">
+            {{iList}}
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
+<p>{{ today | date:'MMMM' }}</p>
+<p>{{ today }}</p> -->
+
+
+<div class="calendar-wrapper">
+  <button id="btnPrev" type="button">Prev</button>
+	  <button id="btnNext" type="button">Next</button>
+  <div id="divCal"></div>
+</div>
+
+<!-- <angular2-fullcalendar [options]="calendarOptions" (initialized)="onCalendarInit($event)"></angular2-fullcalendar> -->
+
+
+<!-- <script src="jquery-3.3.1.min.js"></script> -->
+<!-- <script src="assets/js/calendar.js" charset="utf-8"></script> -->
