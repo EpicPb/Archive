@@ -1,11 +1,11 @@
 .high{
-  background-color: #F44336;
+  border-left: 5px solid #F44336;
 }
 .medium{
-  background-color: #FFEB3B;
+  border-left: 5px solid #FFEB3B;
 }
 .low{
-  background-color: #4CAF50;
+  border-left: 5px solid #4CAF50;
 }
 .priority{
   position: absolute;
@@ -18,13 +18,23 @@
 }
 .card{
   height: auto;
-  padding: 0px;
+  /* padding: 0px; */
+  flex-shrink: 1;
+  width: 24%;
+  margin: .5%;
 }
 .a{
-  padding: 0px 20px 10px 20px;
+  /* padding: 0px 20px 10px 20px; */
 }
 .b{
   font-weight: 400;
   font-size: 14pt;
-  padding: 20px 20px 0px 20px;
+  /* padding: 20px 20px 0px 20px; */
+}
+
+.card-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
 }

@@ -1,4 +1,4 @@
-<div class="">
+<!-- <div class="">
   <mat-form-field [floatLabel]="auto">
     <input matInput placeholder='Title' class="input-title">
   </mat-form-field>
@@ -10,7 +10,7 @@
   <mat-form-field>
     <input matInput placeholder="1">
   </mat-form-field>
-</div>
+</div> -->
 
 
 <form #orderForm="ngForm" (ngSubmit)="onSubmit(orderForm)">
@@ -19,17 +19,14 @@
 
   <div class="form-group">
     <!-- <input class="form-control input-title" name="table" #name="ngModel" [(ngModel)]="tasksService.selectedTask.title" placeholder="Title" required autocomplete="off"> -->
-    <input class="form-control input-title" name="table" placeholder="Title" required autocomplete="off">
-
+    <input type="text" class="form-control input-title" name="table" placeholder="Title" required autocomplete="off">
+  </div>
+  <div class="roboto">
+    <!-- <input class="form-control input-description" name="order" #name="ngModel" [(ngModel)]="tasksService.selectedTask.description" placeholder="Description"  required autocomplete="off"> -->
+    <textarea class="input-description Roboto" placeholder="Description"></textarea>
+    Every <input type="number" class="roboto">
   </div>
 
-  <div>
-    <div class="input-group">
-     <!-- <input class="form-control input-description" name="order" #name="ngModel" [(ngModel)]="tasksService.selectedTask.description" placeholder="Description"  required autocomplete="off"> -->
-     <input class="form-control input-description" name="order" placeholder="Description"  required autocomplete="off">
-
-    </div>
-  </div>
     <button mat-raised-button color="primary"> Submit</button>
     <button mat-raised-button>Reset</button>
 </form>

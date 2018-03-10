@@ -2,7 +2,13 @@
 /* @import "~@angular/material/prebuilt-themes/purple-green.css"; */
 // @import "../node_modules/fullcalendar/dist/fullcalendar.min.css";
 // @import "fullcalendar/fullcalendar.min.css";
-
+@import url('https://fonts.googleapis.com/css?family=Lobster|Roboto');
+.roboto{
+  font-family: 'Roboto', monospace;
+}
+// .lobster{
+//   font-family: 'Lobster', cursive;
+// }
 body{
   margin: 0px;
   padding: 0px;
@@ -46,3 +52,10 @@ a{
 // .material-icons:hover{
 //     transform: scale(1.1);
 // }
+:host-context(.mat-expansion-panel){
+  background-color: white;
+}
+
+/deep/ .mat-expansion-panel{
+  background-color: white;
+}
